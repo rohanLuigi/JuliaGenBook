@@ -1,2 +1,2 @@
-# JuliaQuant
-Introduction to Julia for Quantitative Genetics
+#Introduction to Julia for Statistical Genetics
+Interactive Jupyter notebook
