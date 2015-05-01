@@ -1,3 +1,4 @@
+seed(123)
 m = array(0,2);
 m[1] = 1;
 m[2] = 2;
@@ -36,6 +37,7 @@ naccept=0
 nreject=0
 z = matrix(y-m,2,1);
 denOld = exp(-0.5*t(z)%*%vi%*%z); 
+
 for (iter in 1:100000){
     ynew[1] = y[1] + runif(1, min1, max1);
     ynew[2] = y[2] + runif(1, min2, max2);
@@ -88,6 +90,4 @@ title("Bivariate Samples - MH Sampling")
     points (xtmp[c(1,3)],ytmp[c(1,3)],type="l",col="white")
     points (xtmp[c(2,4)],ytmp[c(2,4)],type="l",col="white")
    	
-    	
-
 }
